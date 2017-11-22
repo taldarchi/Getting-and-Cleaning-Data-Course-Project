@@ -7,8 +7,6 @@ run_analysis <- function(){
         }  
         if (!file.exists("UCI HAR Dataset")) 
           unzip(filename) 
-        #set working directory to the supplied argument directory
-    #    setwd(courseraPath)
         #importing all data
         x_train <- read.table("UCI HAR Dataset/train/X_train.txt")
         y_train <- read.table("UCI HAR Dataset/train/y_train.txt")
